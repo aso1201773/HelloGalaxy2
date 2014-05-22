@@ -1,7 +1,6 @@
 package com.example.hellogalaxy;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,9 +8,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements
+View.OnClickListener
+{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +59,14 @@ public class MainActivity extends Activity {
 			View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 			return rootView;
 		}
+		
 	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+	
 
 }
